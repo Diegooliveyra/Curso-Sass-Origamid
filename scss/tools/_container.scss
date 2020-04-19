@@ -1,0 +1,32 @@
+@mixin container {
+  max-width: $larger-device;
+  margin: 0 auto;
+  position: relative;
+  @include device(tablet) {
+    max-width: $medium-device;
+  }
+  @include device(mobile) {
+    max-width: $small-device;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @include clearfix;
+}
+
+.container {
+  @include container;
+}
+
+@mixin row {
+  margin-left: -$gap-small / 2;
+  margin-right: -$gap-small / 2;
+  @include device(mobile) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @include clearfix;
+}
+
+.row {
+  @include row;
+}
