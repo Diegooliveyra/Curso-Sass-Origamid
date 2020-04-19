@@ -1,0 +1,57 @@
+.intro-lescone {
+  margin-top: $gap-bigger;
+  @include device(mobile) {
+    margin-top: $gap-small;
+  }
+  & .logo {
+    margin-bottom: $gap-bigger;
+  }
+}
+
+.intro-info {
+  border-right: 2px solid $third-color;
+  max-width: 320px;
+  p {
+    padding-top: $gap-small;
+    &:first-child {
+      border-bottom: 2px solid $third-color;
+      padding-bottom: $gap-small;
+    }
+  }
+}
+
+.intro-phone {
+  color: $first-color-dark;
+  @include device(mobile) {
+    margin-bottom: $gap-medium;
+  }
+  &::after {
+    content: "/ / / /";
+    display: block;
+    margin-top: 200px;
+    font-size: 220px;
+    letter-spacing: -90px;
+    color: $third-color;
+    @include device(tablet) {
+      margin-top: 80px;
+      font-size: 160px;
+      letter-spacing: -70px;
+    }
+    @include device(mobile) {
+      display: none;
+    }
+  }
+}
+
+.open {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: $second-color;
+}
+
+.intro-img {
+  border: 10px solid $first-color-medium;
+  width: 100%;
+}

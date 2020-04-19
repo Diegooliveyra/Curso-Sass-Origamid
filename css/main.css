@@ -274,4 +274,78 @@ p {
     width: 60%;
   }
 }
+
+.intro-lescone {
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 759px) {
+  .intro-lescone {
+    margin-top: 20px;
+  }
+}
+
+.intro-lescone .logo {
+  margin-bottom: 60px;
+}
+
+.intro-info {
+  border-right: 2px solid #2A2426;
+  max-width: 320px;
+}
+
+.intro-info p {
+  padding-top: 20px;
+}
+
+.intro-info p:first-child {
+  border-bottom: 2px solid #2A2426;
+  padding-bottom: 20px;
+}
+
+.intro-phone {
+  color: #988c77;
+}
+
+@media screen and (max-width: 759px) {
+  .intro-phone {
+    margin-bottom: 30px;
+  }
+}
+
+.intro-phone::after {
+  content: "/ / / /";
+  display: block;
+  margin-top: 200px;
+  font-size: 220px;
+  letter-spacing: -90px;
+  color: #2A2426;
+}
+
+@media screen and (min-width: 760px) and (max-width: 1399px) {
+  .intro-phone::after {
+    margin-top: 80px;
+    font-size: 160px;
+    letter-spacing: -70px;
+  }
+}
+
+@media screen and (max-width: 759px) {
+  .intro-phone::after {
+    display: none;
+  }
+}
+
+.open {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #1AB912;
+}
+
+.intro-img {
+  border: 10px solid #CBC6B9;
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
