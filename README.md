@@ -4,15 +4,15 @@ Projeto final referente ao curso Css com Sass do site origamid.com.
 
 ##Fundamentos do SASS
 
-*Import
-*Variaveis
-*Nesting
-*Mixins
-*Extend
-*Operadores
-*Condicionais
-*Funções
-*Loop
+* Import
+* Variaveis
+* Nesting
+* Mixins
+* Extend
+* Operadores
+* Condicionais
+* Funções
+* Loop
 
 [Curso Origamid](https://www.origamid.com/curso/css-com-sass/)
 
