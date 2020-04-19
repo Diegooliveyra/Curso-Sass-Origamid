@@ -1,21 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=PT+Mono&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Le Scone</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="grid-6 div1">
-            <div class="row">
-                <div class="grid-6" style="background-color: aqua;">teste</div>
-                <div class="grid-6" style="background-color:brown;">teste</div>
+    <main class="container intro">
+        <div class="grid-5">
+            <img class="logo" src="./img/lescone.png" alt="Les Scone" />
+
+            <div class="intro-info">
+                <p>De Seg. à Sab. <span class="aberto"></span></br>
+                    das 07:00h às 18:00h</p>
+                <p>Praia de Botafogo, 300 </br>
+                    Rio de Janeiro - RJ</p>
+                <p class="phone">+55 021 2412-3333</p>
+            </div>
+            <!--info-->
+        </div>
+        <!--grid-5-->
+
+        <div class="grid-7">
+            <img src="./img/foto.jpg" alt="foto le scone">
+        </div>
+    </main>
+
+    <section class="container menu">
+        <h1 class="grid-4 title">Menu</h1>
+        <div class="grid-7 offset-1">
+            <div class="menu-item">
+                <img src="./img/prato-1.png" alt="">
+                <h2 class="subtitle">Entradas</h2>
+                <ul>
+                    <li>
+                        <spam>1,70</spam> Ovos Mexidos
+                    </li>
+                    <li>
+                        <spam>2,70</spam> Scones de Frutas
+                    </li>
+                    <li>
+                        <spam>3,70</spam> Joelho de Queijo
+                    </li>
+                    <li>
+                        <spam>4,70</spam> Presunto Cozido
+                    </li>
+                    <li>
+                        <spam>3,70</spam> Coxinha de Frango
+                    </li>
+                </ul>
+
+                <img src="./img/prato-2.png" alt="">
+                <h2 class="subtitle">Pratos Principais</h2>
+                <ul>
+                    <li>
+                        <spam>19,70</spam> Penne com Queijo
+                    </li>
+                    <li>
+                        <spam>22,70</spam> Feijoada
+                    </li>
+                    <li>
+                        <spam>33,70</spam> Costela ao Molho
+                    </li>
+                    <li>
+                        <spam>40,70</spam> Medalhão de Frango
+                    </li>
+                    <li>
+                        <spam>31,70</spam> Nhoque de Frango
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="grid-6 div2">teste</div>
-    </div>
+    </section>
+
+    <section class="container contato">
+        <h1 class="grid-4 title">Contato</h1>
+        <div class="grid-7 offset-1">
+            <form>
+                <label for="">Nome</label>
+                <input type="text">
+                <div class="row">
+                    <div class="grid-7">
+                        <label for="">Email</label>
+                        <input type="text">
+                    </div>
+                    <div class="grid-5">
+                        <label for="">Telefone</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <label for="">Mensagem</label>
+                <textarea></textarea>
+                <input class="btn" type="button" value="Enviar">
+
+            </form>
+            <div class="contato-info">
+                <p>contato@lescone.com ////</p>
+                <p> +55 021 2412-3333 //// </p>
+            </div>
+            <a href="#" class="contato-mapa">
+                <img src="./img/map.png" alt="mapa">
+            </a>
+        </div>
+        <!--grid-7 offset-1-->
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Le Scone © 1989 - 2016. Alguns direitos reservados</p>
+            <a href="#" target="blank">
+                <img src="./img/lescone-icone.png" alt="">
+            </a>
+        </div>
+    </footer>
 
 </body>
+
 </html>
