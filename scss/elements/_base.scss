@@ -3,4 +3,16 @@ body {
     font-family: $font-1;
     border: 10px solid $first-color-medium;
     color: $third-color;
+    @include device (mobile) {
+        border: none;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p {
+    @include type-1 (18);
 }
