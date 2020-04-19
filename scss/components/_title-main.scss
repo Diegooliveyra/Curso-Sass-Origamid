@@ -1,0 +1,20 @@
+.title-main {
+    @include type-1(18);
+    text-transform: uppercase;
+    @include device (mobile) {
+        margin-top: $gap-big;
+        margin-bottom: $gap-big;
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 75%;
+        height: 2px;
+        background-color: $third-color;
+        float: right;
+        margin-top: 14px;
+        @include device (tablet) {
+            width: 60%;
+        }
+    }
+}
