@@ -1,0 +1,26 @@
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+@mixin type-1($size) {
+  font-family: $font-1;
+  @if $size == 18 {
+    font-size: em(18);
+    line-height: em(30,18);
+  }
+}
+
+@mixin type-2($size) {
+    font-family: $font-2;
+    @if $size == 18 {
+      font-size: em(18);
+      line-height: em(30,18);
+    }
+    @else if $size == 24 {
+        font-size: em(24);
+        line-height: em(30,24);
+      }
+  }
+  

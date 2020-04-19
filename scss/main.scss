@@ -1,9 +1,13 @@
 @import "./settings/gaps";
+@import "./settings/colors";
+@import "./settings/fonts";
 
-@import "./tools/responsivel";
+@import "./tools/responsible";
 @import "./tools/grid";
 @import "./tools/container";
+@import "./tools/typography";
 
 @import "./generic/reset";
 @import "./generic/box-sizing";
 
+@import "./elements/base";

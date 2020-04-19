@@ -220,4 +220,11 @@ table {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  background: #edece4;
+  font-family: "PT Mono", monospace;
+  border: 10px solid #CBC6B9;
+  color: #2A2426;
+}
 /*# sourceMappingURL=main.css.map */
