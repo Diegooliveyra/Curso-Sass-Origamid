@@ -1,0 +1,21 @@
+.footer-lescone {
+  background: $third-color;
+  padding: $gap-medium;
+  color: $first-color-light;
+  margin-top: -$gap-small;
+    @include box-shadow(0 0 0 10px $third-color);
+  p {
+    float: left;
+    @include device(mobile) {
+      text-align: center;
+      margin-bottom: $gap-small;
+    }
+  }
+  img {
+    float: right;
+    @include device(mobile) {
+      float: none;
+      margin: 0 auto;
+    }
+  }
+}

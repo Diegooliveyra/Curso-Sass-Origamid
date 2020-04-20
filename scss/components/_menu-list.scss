@@ -1,0 +1,43 @@
+.menu-list {
+  margin-top: $gap-bigger * 2;
+  margin-bottom: $gap-bigger * 2;
+  @include device(mobile) {
+    margin-top: $gap-big;
+    margin-bottom: $gap-big;
+  }
+}
+
+.menu-item {
+  margin-bottom: $gap-bigger;
+  li {
+    @include type-1(18);
+    line-height: em(40, 18);
+    span {
+      font-family: font-2;
+      color: $first-color-dark;
+      display: inline-block;
+      width: 70px;
+      text-align: right;
+      margin-right: 10px;
+      margin-left: -90px;
+      @include device(mobile) {
+        margin-left: 0px;
+        width: auto;
+      }
+    }
+  }
+  img {
+    border: 10px solid $first-color-medium;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    margin-top: $gap-bigger - 10;
+    @include device(desktop) {
+      right: 120px;
+    }
+    @include device(mobile) {
+      position: static;
+      margin: 0 auto $gap-small auto;
+    }
+  }
+}

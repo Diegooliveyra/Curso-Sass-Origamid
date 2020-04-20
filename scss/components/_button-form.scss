@@ -1,0 +1,23 @@
+.btn {
+  @include type-1(18);
+  cursor: pointer;
+  color: $first-color-dark;
+  text-transform: uppercase;
+  border: 2px solid $first-color-dark;
+  background: transparent;
+  display: block;
+  width: 200px;
+  padding: 5px 0;
+  @include box-shadow(
+    5px 5px 0 -2px $first-color-medium,
+    5px 5px 0 0 $first-color-dark
+  );
+  transition: 0.3s;
+  outline: none;
+  &:hover {
+    @include box-shadow(
+      3px 3px 0 -2px $first-color-medium,
+      3px 3px 0 0 $first-color-dark
+    );
+  }
+}

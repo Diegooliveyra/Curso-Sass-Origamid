@@ -1,0 +1,4 @@
+.subtitle {
+  @include type-2(24);
+  margin-bottom: $gap-small;
+}

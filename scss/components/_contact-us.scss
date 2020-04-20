@@ -1,0 +1,57 @@
+.contact-us {
+  margin-top: $gap-bigger * 2;
+  margin-bottom: $gap-bigger * 2;
+  @include device(mobile) {
+    margin-top: $gap-big;
+    margin-bottom: $gap-big;
+  }
+}
+
+.form {
+  label {
+    @include type-1(18);
+    display: block;
+  }
+  input[type="text"],
+  textarea {
+    @include type-1(18);
+    color: $third-color;
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    border: 2px solid $first-color-dark;
+    background: transparent;
+    margin-bottom: $gap-small;
+    &:hover,
+    &:focus {
+      outline: none;
+      border-color: $first-color-medium;
+    }
+  }
+  textarea {
+    height: 120px;
+  }
+}
+
+.contato-info {
+  color: $first-color-dark;
+  @include device(desktop) {
+    float: right;
+    text-align: right;
+    margin-top: -$gap-big;
+  }
+  margin-top: $gap-big;
+  margin-bottom: $gap-bigger;
+}
+
+.contato-mapa {
+  display: block;
+  @include box-shadow(0px 0px 0px 10px $first-color-medium);
+  clear: both;
+  img {
+    width: 100%;
+  }
+  @include device(mobile) {
+    margin-bottom: $gap-big;
+  }
+}

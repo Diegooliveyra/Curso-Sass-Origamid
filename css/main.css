@@ -117,12 +117,12 @@
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
 
-@media screen and (min-width: 760px) and (max-width: 1399px) {
+@media screen and (min-width: 760px) and (max-width: 1199px) {
   .container {
     max-width: 760px;
   }
@@ -269,7 +269,7 @@ p {
   margin-top: 14px;
 }
 
-@media screen and (min-width: 760px) and (max-width: 1399px) {
+@media screen and (min-width: 760px) and (max-width: 1199px) {
   .title-main::after {
     width: 60%;
   }
@@ -322,7 +322,7 @@ p {
   color: #2A2426;
 }
 
-@media screen and (min-width: 760px) and (max-width: 1399px) {
+@media screen and (min-width: 760px) and (max-width: 1199px) {
   .intro-phone::after {
     margin-top: 80px;
     font-size: 160px;
@@ -347,5 +347,203 @@ p {
 .intro-img {
   border: 10px solid #CBC6B9;
   width: 100%;
+}
+
+.menu-list {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+@media screen and (max-width: 759px) {
+  .menu-list {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.menu-item {
+  margin-bottom: 60px;
+}
+
+.menu-item li {
+  font-family: "PT Mono", monospace;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  line-height: 2.22222em;
+}
+
+.menu-item li span {
+  font-family: font-2;
+  color: #988c77;
+  display: inline-block;
+  width: 70px;
+  text-align: right;
+  margin-right: 10px;
+  margin-left: -90px;
+}
+
+@media screen and (max-width: 759px) {
+  .menu-item li span {
+    margin-left: 0px;
+    width: auto;
+  }
+}
+
+.menu-item img {
+  border: 10px solid #CBC6B9;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-item img {
+    right: 120px;
+  }
+}
+
+@media screen and (max-width: 759px) {
+  .menu-item img {
+    position: static;
+    margin: 0 auto 20px auto;
+  }
+}
+
+.subtitle {
+  font-family: "Aref Ruqaa", serif;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  margin-bottom: 20px;
+}
+
+.contact-us {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+@media screen and (max-width: 759px) {
+  .contact-us {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.form label {
+  font-family: "PT Mono", monospace;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  display: block;
+}
+
+.form input[type="text"],
+.form textarea {
+  font-family: "PT Mono", monospace;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  color: #2A2426;
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  border: 2px solid #988c77;
+  background: transparent;
+  margin-bottom: 20px;
+}
+
+.form input[type="text"]:hover, .form input[type="text"]:focus,
+.form textarea:hover,
+.form textarea:focus {
+  outline: none;
+  border-color: #CBC6B9;
+}
+
+.form textarea {
+  height: 120px;
+}
+
+.contato-info {
+  color: #988c77;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contato-info {
+    float: right;
+    text-align: right;
+    margin-top: -40px;
+  }
+}
+
+.contato-mapa {
+  display: block;
+  -webkit-box-shadow: 0px 0px 0px 10px #CBC6B9;
+  box-shadow: 0px 0px 0px 10px #CBC6B9;
+  clear: both;
+}
+
+.contato-mapa img {
+  width: 100%;
+}
+
+@media screen and (max-width: 759px) {
+  .contato-mapa {
+    margin-bottom: 40px;
+  }
+}
+
+.btn {
+  font-family: "PT Mono", monospace;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  cursor: pointer;
+  color: #988c77;
+  text-transform: uppercase;
+  border: 2px solid #988c77;
+  background: transparent;
+  display: block;
+  width: 200px;
+  padding: 5px 0;
+  -webkit-box-shadow: 5px 5px 0 -2px #CBC6B9, 5px 5px 0 0 #988c77;
+  box-shadow: 5px 5px 0 -2px #CBC6B9, 5px 5px 0 0 #988c77;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 3px 3px 0 -2px #CBC6B9, 3px 3px 0 0 #988c77;
+  box-shadow: 3px 3px 0 -2px #CBC6B9, 3px 3px 0 0 #988c77;
+}
+
+.footer-lescone {
+  background: #2A2426;
+  padding: 30px;
+  color: #edece4;
+  margin-top: -20px;
+  -webkit-box-shadow: 0 0 0 10px #2A2426;
+  box-shadow: 0 0 0 10px #2A2426;
+}
+
+.footer-lescone p {
+  float: left;
+}
+
+@media screen and (max-width: 759px) {
+  .footer-lescone p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.footer-lescone img {
+  float: right;
+}
+
+@media screen and (max-width: 759px) {
+  .footer-lescone img {
+    float: none;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
